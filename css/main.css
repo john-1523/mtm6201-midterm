@@ -48,9 +48,51 @@ nav {
 }
 
 .btn-white:hover {
-    background-color: #d69e3d;
+    background-color: #966f2c;
     border: #fff solid 2px;
     color: #fff;
+    transition: 0.2s linear;
+}
+
+.btn-ghost {
+    border: #fff solid 2px;
+    color: #fff;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    width: 45%;
+    text-align: center;
+    margin: 1em auto;
+    padding: 0.75em 1.25em;
+    transition: 0.2s linear;
+}
+
+.btn-ghost:hover {
+    background-color: #fff;
+    border: #fff solid 2px;
+    color: #000;
+    transition: 0.2s linear;
+}
+
+.btn-black {
+    background-color: #000;
+    border: #000 solid 2px;
+    color: #fff;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    width: 30%;
+    text-align: center;
+    margin: 1em 0;
+    padding: 0.75em 1.25em;
+    transition: 0.2s linear;
+}
+
+.btn-black:hover {
+    background-color: #966f2c;
+    border: #966f2c solid 2px;
     transition: 0.2s linear;
 }
 
@@ -101,6 +143,12 @@ nav a {
     text-transform: uppercase;
     font-weight: 750;
     color: #fff;
+    transition: 0.2s linear;
+}
+
+nav a:hover {
+    color: #d69e3d;
+    transition: 0.2s linear;
 }
 
 /* styling banner section */
@@ -235,7 +283,7 @@ nav a {
 .about .container {
     width: 95%;
     margin: auto;
-    padding-top: 5em;
+    padding: 5em 0;
 }
 
 .about img {
@@ -257,13 +305,13 @@ nav a {
 /* styling testimonials section */
 .testimonials {
     background-color: #000;
-    padding-bottom: 1em;
+    padding: 4em 0;
 }
 
 .testimonials .container {
     width: 95%;
     margin: auto;
-    padding-top: 4em;
+    /* padding-top: 4em; */
 }
 
 .testimonials h2 {
@@ -310,13 +358,12 @@ footer {
 
 footer hr {
     border-color: #000;
-    padding: 1em 0;
 }
 
 footer p {
     color: #fff;
     text-align: center;
-    padding-bottom: 3em;
+    padding-bottom: 4em;
 }
 
 /* TABLET */
