@@ -1,3 +1,5 @@
+/* MOBILE-FIRST APPROACH */
+
 /* changing fonts & font sizes */
 h1, h2, h3 {
     font-family: 'Lato', sans-serif;
@@ -251,3 +253,70 @@ nav a {
 .about p:not(.description) {
     padding-bottom: 0.5em;
 }
+
+/* styling testimonials section */
+.testimonials {
+    background-color: #000;
+    padding-bottom: 1em;
+}
+
+.testimonials .container {
+    width: 95%;
+    margin: auto;
+    padding-top: 4em;
+}
+
+.testimonials h2 {
+    color: #fff;
+    font-weight: 650;
+    padding-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
+.testimonials p:not(.description) {
+    color: #fff;
+}
+
+.testimonials .customers {
+    padding: 1em;
+    padding-top: 25em;
+    margin: 1em 0;
+}
+
+.testimonials .num1 {
+    background-image: url(../images/testimonial-1.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.testimonials .num2 {
+    background-image: url(../images/testimonial-2.jpeg);
+    background-size: cover;
+    background-position: top;
+}
+
+.testimonials .num3 {
+    background-image: url(../images/testimonial-3.jpeg);
+    background-size: cover;
+    background-position: top;
+}
+
+/* styling footer */
+footer {
+    background-color: #000;
+    position: relative;
+    bottom: 1em;
+}
+
+footer hr {
+    border-color: #000;
+    padding: 1em 0;
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
+    padding-bottom: 3em;
+}
+
+/* TABLET */
