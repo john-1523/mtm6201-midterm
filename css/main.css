@@ -30,7 +30,7 @@ nav {
 }
 
 /* styling buttons */
-.btn {
+.btn-white {
     background-color: #fff;
     border: #fff solid 2px;
     color: #000;
@@ -41,14 +41,11 @@ nav {
     width: 45%;
     text-align: center;
     margin: 1em auto;
-    padding-top: 0.75em;
-    padding-bottom: 0.75em;
-    padding-left: 1.25em;
-    padding-right: 1.25em;
+    padding: 0.75em 1.25em;
     transition: 0.2s linear;
 }
 
-.btn:hover {
+.btn-white:hover {
     background-color: #d69e3d;
     border: #fff solid 2px;
     color: #fff;
@@ -58,6 +55,14 @@ nav {
 /* changing background colour for entire page */
 body {
     background-color: #f3f0e9;
+}
+
+/* reusable elements */
+.description {
+    color: #d69e3d;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 0.5em 0;
 }
 
 /* styling header */
@@ -134,13 +139,6 @@ nav a {
     padding-top: 4em;
 }
 
-.welcome p {
-    color: #d69e3d;
-    font-size: 18px;
-    text-transform: uppercase;
-    padding: 0.5em 0;
-}
-
 .welcome h2 {
     color: #323232;
     font-weight: 650;
@@ -159,4 +157,97 @@ nav a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1em;
+}
+
+/* styling benefits section */
+.benefits .container {
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.benefits .description {
+    text-align: center;
+}
+
+.benefits h2 {
+    color: #323232;
+    font-weight: 650;
+    padding-bottom: 1em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.benefits img {
+    width: 40%;
+    display: block;
+    margin: auto;
+}
+
+.benefits h3 {
+    color: #323232;
+    font-weight: 650;
+    padding-top: 1em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.benefits p:not(.description) {
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 4em;
+}
+
+/* styling menu section */
+.menu {
+    background-image: url(../images/coffee-shop.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.menu .container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 4em;
+    padding-bottom: 5em;
+}
+
+.menu .description {
+    text-align: center;
+}
+
+.menu h2 {
+    color: #fff;
+    font-weight: 650;
+    padding-bottom: 1em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.menu .btn-white {
+    margin-bottom: 3em;
+}
+
+/* styling about section */
+.about .container {
+    width: 95%;
+    margin: auto;
+    padding-top: 5em;
+}
+
+.about img {
+    width: 100%;
+    padding-bottom: 0.5em;
+}
+
+.about h2 {
+    color: #323232;
+    font-weight: 650;
+    padding-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
+.about p:not(.description) {
+    padding-bottom: 0.5em;
 }
