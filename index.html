@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Coffee House</title>
+    <title>Midterm Project</title>
     <!-- css reset to clear default styling -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
@@ -13,20 +13,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <a href="#"><img src="images/my-coffee-shop-logo.svg" alt="My Coffee House logo with image of a coffee bean"></a>
+    <header role="banner">
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="images/my-coffee-shop-logo.svg" alt="My Coffee House logo with image of a coffee bean"></a>
+            </div>
+            <nav role="navigation">
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Locations</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Locations</a></li>
-            </ul>
-        </nav>
     </header>
-    <main>
-        <section class="banner">
+    <main role="main">
+        <section class="banner" role="banner">
             <div class="shadow">
                 <div class="container">
                     <h1>Experience coffee like never before</h1>

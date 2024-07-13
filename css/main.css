@@ -5,6 +5,12 @@ body {
     background-color: #f3f0e9;
 }
 
+/* setting max width for each section */
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
 /* changing fonts & font sizes */
 h1, h2, h3 {
     font-family: 'Lato', sans-serif;
@@ -163,7 +169,7 @@ nav a:hover {
 }
 
 .banner .container {
-    width: 80%;
+    width: 28em;
     margin: 0 auto;
     padding-top: 7em;
     padding-bottom: 5em;
@@ -193,6 +199,7 @@ nav a:hover {
     color: #323232;
     font-weight: 650;
     padding-bottom: 1em;
+    width: 12em;
 }
 
 /* setting up image grid */
@@ -221,7 +228,7 @@ nav a:hover {
 
 /* styling benefits section */
 .benefits .container {
-    width: 85%;
+    width: 24em;
     margin: 0 auto;
     padding-top: 5em;
     padding-bottom: 4em;
@@ -267,7 +274,7 @@ nav a:hover {
 }
 
 .menu .container {
-    width: 80%;
+    width: 28em;
     margin: 0 auto;
     padding-top: 4em;
     padding-bottom: 5em;
@@ -328,6 +335,7 @@ nav a:hover {
     font-weight: 650;
     padding-bottom: 1em;
     text-transform: uppercase;
+    width: 14em;
 }
 
 .testimonials p:not(.description) {
@@ -380,7 +388,7 @@ footer p {
     padding-bottom: 4em;
 }
 
-/* TABLET */
+/* TABLET VERSION */
 @media screen and (min-width: 768px) {
     /* adjusting font sizes */
     h1 {
@@ -393,6 +401,11 @@ footer p {
 
     h3 {
         font-size: 1.728rem;
+    }
+
+    /* adjusting banner section */
+    .banner .container {
+        width: 37em;
     }
 
     /* adjusting welcome section */
@@ -449,13 +462,12 @@ footer p {
     }
 
     /* adjusting menu section */
-    .menu .container {
-        display: flex;
-    }
-
-    .menu .flex {
-        width: 22em;
-    }
+   .menu .container {
+    width: 80%;
+    display: flex;
+    gap: 2em;
+    padding-top: 6em;
+   }
 
     /* adjusting about section */
     .about .container {
@@ -474,8 +486,12 @@ footer p {
     }
 
     /* adjusting testimonials section */
+    .testimonials {
+        padding-bottom: 7em;
+    }
+    
     .testimonials h2 {
-        width: 70%;
+        width: 14em;
     }
 
     .testimonials .flex-container {
@@ -487,5 +503,60 @@ footer p {
     .testimonials #flex2,
     .testimonials #flex3 {
         width: 33%;
+    }
+}
+
+/* DESKTOP VERSION */
+@media screen and (min-width: 1100px) {
+    /* adjusting font sizes */
+    h1 {
+        font-size: 3.815rem;
+    }
+
+    h2 {
+        font-size: 3.052rem;
+    }
+
+    h3 {
+        font-size: 1.953rem;
+    }
+
+    /* adjusting header */
+    header .container {
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav {
+        padding: 0;
+    }
+
+    /* adjusting banner section */
+    .banner .container {
+        width: 40em;
+        padding: 12em 0;
+    }
+
+    /* adjusting welcome section */
+    .welcome h2 {
+        width: 12em;
+    }
+
+    /* adjusting benefits section */
+    .benefits .flex-container {
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.3em;
+    }
+
+    .benefits .flex {
+        width: 33%;
+    }
+
+    /* adjusting menu section */
+    .menu .container {
+        width: 50em;
     }
 }
