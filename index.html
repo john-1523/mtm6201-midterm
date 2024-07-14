@@ -13,12 +13,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <ul class="skip-links">
+        <li><a href="#nav">Skip to main nav</a></li>
+        <li><a href="#main">Skip to main content</a></li>
+    </ul>
     <header role="banner">
         <div class="container">
             <div class="logo">
-                <a href="#"><img src="images/my-coffee-shop-logo.svg" alt="My Coffee House logo with image of a coffee bean"></a>
+                <a href="#"><img src="images/my-coffee-shop-logo.svg" alt="'My Coffee House' logo with image of a coffee bean"></a>
             </div>
-            <nav role="navigation">
+            <nav role="navigation" id="nav">
                 <ul>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Menu</a></li>
@@ -27,7 +31,7 @@
             </nav>
         </div>
     </header>
-    <main role="main">
+    <main role="main" id="main">
         <section class="banner" role="banner">
             <div class="shadow">
                 <div class="container">
@@ -37,7 +41,7 @@
                 </div>
             </div>
         </section>
-        <section class="welcome">
+        <section class="welcome" role="region">
             <div class="container">
                 <p class="description">Welcome to My Coffee House</p>
                 <h2>EXPERIENCE A NEW WAY TO TASTE COFFEE</h2>
@@ -50,30 +54,30 @@
                 </div>
             </div>
         </section>
-        <section class="benefits">
+        <section class="benefits" role="region">
             <div class="container">
                 <p class="description">What we Offer</p>
                 <h2>Why visit us?</h2>
                 <div class="flex-container">
                     <div class="flex" id="flex1">
-                        <img src="images/fair-trade.svg" alt="">
+                        <img src="images/fair-trade.svg" alt="icon of two hands, money and a farmer">
                         <h3>Fair Trade Coffee</h3>
                         <p>We build direct relationships with the farmers and producers who help in the development of delicious, sustainable and organic coffee.</p>
                     </div>
                     <div class="flex" id="flex2">
-                        <img src="images/local-baked-goods.svg" alt="">
+                        <img src="images/local-baked-goods.svg" alt="icon of a basket filled with baked goods">
                         <h3>Local Baked Goods</h3>
                         <p>We use local products to bake our goods and bring in a variety of treats from local bakers with our community.</p>
                     </div>
                     <div class="flex" id="flex3">
-                        <img src="images/made-with-love.svg" alt="">
+                        <img src="images/made-with-love.svg" alt="icon of a steaming coffee mug with a heart on it">
                         <h3>Made With Love</h3>
                         <p>We value our customers and make it our priority to serve everyone with respect and a friendly smile to start their day off right.</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="menu">
+        <section class="menu" role="banner">
             <div class="shadow">
                 <div class="container">
                     <div class="flex">
@@ -89,10 +93,10 @@
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section class="about" role="region">
             <div class="container">
                 <div class="flex">
-                    <img src="images/about-us.jpeg" alt="">
+                    <img src="images/about-us.jpeg" alt="image of two baristas working">
                 </div>
                 <div class="flex">
                     <p class="description">About Us</p>
@@ -103,12 +107,12 @@
                 </div>
             </div>
         </section>
-        <section class="testimonials">
+        <section class="testimonials" role="region">
             <div class="container">
                 <p class="description">Testimonials</p>
                 <h2>What our customers say about us</h2>
                 <div class="flex-container">
-                    <div id="flex1">
+                    <div id="flex-1">
                         <div class="shadow">
                             <div class="reviews">
                                 <p>"I always make a point to visit My Coffee Company when in Ottawa. Delicious coffee and friendly service."</p>
@@ -116,7 +120,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="flex2">
+                    <div id="flex-2">
                         <div class="shadow">
                             <div class="reviews">
                                 <p>"Great atmosphere to get some work done while enjoying a cup or two of incredible coffee."</p>
@@ -124,7 +128,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="flex3">
+                    <div id="flex-3">
                         <div class="shadow">
                             <div class="reviews">
                                 <p>"Best coffee in Ottawa and the service is top notch. Would highly recommend a visit."</p>
@@ -136,7 +140,7 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer role="contentinfo">
         <hr>
         <div class="container">
             <p>© My Coffee Company 2024</p>
